@@ -14,8 +14,9 @@ public class TCP : MonoBehaviour
 	#endregion
 	// Use this for initialization 	
 	void Start()
-	{
-		socketConnection = new TcpClient("192.168.2.245", 6743);
+	{	
+		// TODO: Put in your server IP
+		socketConnection = new TcpClient("ip here", 6743);
 		ConnectToTcpServer();
 	}
 
